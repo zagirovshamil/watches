@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Open Lection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Prata&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav class="page-header__main-nav main-nav">
+        <a class="main-nav__logo logo">
+          <img
+            class="logo__img"
+            src="/img/conquest.svg"
+            alt="Логотип"
+            width="103"
+            height="26"
+          />
+        </a>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Акции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="page-header__user-nav user-nav">
+        <ul class="user-nav__list">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#"
+              ><img src="/img/logo-search.svg" alt="Поиск"
+            /></a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#"
+              ><img src="/img/logo-favorites.svg" alt="Избранное"
+            /></a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#"
+              ><img src="/img/logo-basket.svg" alt="Корзина"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="promo">
+        <h2 class="promo__title">Весна/Лето 2019</h2>
+        <p class="promo__sub-title">Коллекция</p>
+        <p class="promo__description">
+          Швейцарские часы в наличии в Москве и с доставкой по всему миру
+        </p>
+        <a class="promo__link button button--dark" href="#">Смотреть каталог</a>
+        <img
+          class="promo__img"
+          src="/img/watch_main.svg"
+        />
+        <span class="promo__price">22 000 ₽ 
+        <div class="price__line"></div>
+        </span>
+        <span class="promo__characteristics">28 мм диаметр 
+           <div class="characteristics__line"></div>
+        </span>
+      </section>
+
+      <section class="popular">
+        <h2 class="popular__title ">Популярные модели</h2>
+        <a class="popular__show-more" href="#">Смотреть все
+            <div class="show-more-line"></div>
+        </a>
+        <ul class="popular__list">
+          <li class="popular__item">
+            <article class="popular__card">
+              <h2 class="card__title">RADO</h2>
+              <span class="card__price">63 300</span>
+              <img
+                class="card__img"
+                src="/img/watch_1.svg"/>
+              <a class="card__link" href="#"><div class="card-line"></div>Подробнее</a>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="popular__card">
+              <h2 class="card__title">BVLGARI</h2>
+              <span class="card__price">63 300</span>
+              <img
+                class="card__img"
+                src="/img/watch_2.svg"/>
+              <a class="card__link" href="#"><div class="card-line"></div>Подробнее</a>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="popular__card">
+              <h2 class="card__title">BVLGARI</h2>
+              <span class="card__price">63 300</span>
+              <img
+                class="card__img"
+                src="/img/watch_3.svg"/>
+              <a class="card__link" href="#"><div class="card-line"></div>Подробнее</a>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+    <section class="advantages">
+    <div class="backgroundWithBrown"></div>
+    <div class="backgroundWithCircle"></div>
+          <li class="advantages__item">
+            <div class="advantages__left">
+              <img
+                class="advantages__img"
+                src="/img/photo_banner.svg"
+              />
+            </div>
+            <div class="advantages__right">
+              <h3 class="advantages__title ">Подлинное качество</h3>
+              <p class="advantages__description">
+                Все часы производятся в Швейцарии и имеют сертификаты качества.
+                Настоящие швейцарские часы — это предмет гордости и престижа.
+              </p>
+              <a class="advantages__link button" href="#">Смотреть каталог</a>
+            </div>
+          </li>
+        </ul>
+        <div class="advantages__slider-control slider-control">
+          <button class="advantages__button button-right" type="button">
+            <img src="/img/arrow_right.svg" alt="">
+          </button>
+          <span class="slider-control__position">01</span>
+          <button class="advantages__button button-left" type="button">
+            <img src="/img/arrow_left.svg" alt="">
+          </button>
+        </div>
+    </section>
+
+      <section class="news-company">
+        <div class="news-company__left">
+          <p class="news-company__text ">Следите за нашими новостями</p>
+          <p class="news-company__description">
+            Подписывайтесь на <strong>@conquest_watch</strong> в соцсетях и
+            узнавайте о новинках и акциях первыми.
+          </p>
+          <section class="news-company__socials socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link instagram" href="#"><img src="/img/instagram_icon.svg" alt=""></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link facebook" href="#"><img src="/img/facebook_icon.svg" alt=""></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link twitter" href="#"><img src="/img/twitter_icon.svg" alt=""></a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="news-company__right">
+          <a href="#"
+            ><img
+              class="firstFoto"
+              src="/img/photo_1.svg"/></a>
+          <a href="#"
+            ><img
+              class="secondFoto"
+              src="img/photo_2.svg"/></a>
+          <a href="#"
+            ><img
+              class="thirdFoto"
+              src="img/photo_3.svg"/></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer class="page-footer">
+      <div class="page-footer__column page-footer-column--logo">
+        <a class="page-footer__logo logo">
+          <img
+            class="page-footer__logo logo"
+            src="img/conquest-logo-footer.png"
+            alt="Логотип"
+            width="103"
+            height="26"
+          />
+        </a>
+        <div class="page-footer__wrapper">
+          <a class="page-footer__link" href="tel:+784994504797"
+            >8 (499) 450-47-97</a
+          >
+          <a class="page-footer__link" href="mailto:info@conquest.watch.ru"
+            >info@conquest.watch.ru</a
+          >
+        </div>
+      </div>
+      <div class="page-footer__column page-footer__column--about">
+        <h3 class="page-footer__title">О Компании</h3>
+        <div class="page-footer__wrapper">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__column page-footer__column--about">
+        <h3 class="page-footer__title">Покупателям</h3>
+        <div class="page-footer__wrapper">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__column page-footer__column--about">
+        <h3 class="page-footer__title">Оплата и доставка</h3>
+        <div class="page-footer__wrapper">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer> -->
+  </body> 
+</html>

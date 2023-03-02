@@ -1,0 +1,482 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+$PlayFairDisplay: 'Playfair Display', serif;
+$Prata: 'Prata', serif;
+$Roboto: 'Roboto', sans-serif;
+
+@mixin line {
+    border:1px solid;
+    color: #8B8371;
+    width: 50px;
+    height: 0px;
+} 
+
+
+// Make header
+
+
+.page-header {
+    position: relative;
+    width: 100%;
+    height: 85px;
+}
+.page-header__main-nav {
+
+}
+
+
+.logo__img {
+    position: absolute;
+    width: 103.68px;
+    height: 26px;
+    left: 6%;
+    top: 31px;
+}
+.main-nav__list {
+    position: relative;
+    width: 422px;
+    height: 13px;
+    left: 40%;
+    top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav__link{
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    color: #555248;
+
+}
+
+.main-nav__list li::marker{
+    content: none;
+}
+
+.user-nav__list {
+    position: absolute;
+    height: 21px;
+    width: 99px;
+    left: 90%;
+    top: 18px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-nav__list li::marker{
+    content: none;
+}
+
+.promo {
+    width: 100%;
+    height: 768px;
+    position: relative;
+    background: url(/img/elipse_main.svg) no-repeat;
+    background-size: 80%;
+}
+.promo__title {
+    font-family: $PlayFairDisplay;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 236px;
+    left: 13%;
+}
+.promo__sub-title {
+    font-family: $PlayFairDisplay;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 300px;
+    left: 13%;
+}
+.promo__description {
+    height: 34.00019454956055px;
+    width: 258px;
+    left: 13%;
+    top: 370px;
+    font-family: $Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+}
+
+.button {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: $Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    position: absolute;
+    top: 468px;
+    left: 13%;
+
+}
+.button--dark {
+    background: #444240;
+    padding:38px 26px;
+}
+.promo__img {
+    position: absolute;
+    height: 804.2501390622232px;
+    width: 502.6314193679746px;
+    left: 45%;
+    top: -4px;
+    border-radius: 0px;
+    
+}
+.promo__price {
+    font-family: Prata;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 138px;
+    left: 700px;
+
+}
+
+
+.price__line{
+    position: absolute;
+    left: 78px;
+    top: 9px;
+    @include line;
+}
+
+
+.promo__characteristics {
+    font-family: $Prata;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    position: absolute;
+    top: 636px;
+    left: 1300px;
+}
+
+.characteristics__line{
+    position: absolute;
+    left: -60px;
+    top: 9px;
+    @include line;
+}
+
+.popular{
+    height: 100%;
+    position: relative;
+}
+
+.popular__title {
+    font-family: $PlayFairDisplay;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: absolute;
+    top: 8%;
+    left: 45%;
+}
+
+.popular__show-more {
+    height: 15px;
+    width: 104px;
+    position: absolute;
+    right: 98px;
+    top: 115px;
+    color: #444240;
+    font-family: $Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+}
+
+.show-more-line{
+    position: absolute;
+    left: 0;
+    top: 26.5px;
+    @include line;
+    background: #444240;
+    width: 101px;
+
+}
+.popular__list {  
+    position: relative;
+    top: 167px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.popular__item {
+    margin-right: 8%;
+}
+
+li.popular__item::marker{
+    content: none;
+}
+
+.popular__card {
+    background: #FDFDFB;
+    height: 467px;
+    width: 370px;
+}
+
+.card__title {
+    font-family: $PlayFairDisplay;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    text-decoration: none;
+
+}
+.card__price {
+    font-family: $Prata;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.card__img {
+    background: url(/img/Ellipse.svg);
+    z-index: 3;
+}
+.card__link {
+    font-family: $PlayFairDisplay;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-decoration: none;
+    position: relative;
+    top: -28px;
+    left: 80px;
+    color: #1B1A17;
+}
+
+.card-line{
+    @include line;
+    width: 30px;
+    height: 0px;
+    position: relative;
+    left: -48px;
+    top: 13px;
+}
+
+
+.advantages {
+    width: 100%;
+    position: relative;
+    top: 161px;
+    height: 519px;
+}
+.backgroundWithBrown {
+    background: url(/img/background_banner_1.svg)no-repeat;
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-size: 100%;
+}
+
+.backgroundWithCircle { 
+    background: url(/img/lines_banner.svg)no-repeat;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    color: #FDFDFB;
+    width: 47%;
+}
+
+
+
+.advantages__img {
+    width: 521px;
+    height: 414px;
+    z-index: 6;
+    position: absolute;
+    left: 350px;
+    top: 52px;
+
+}
+.advantages__right {
+    position: relative;
+    top: 82px;
+    right: 570px;
+}
+.advantages__title {
+    height: 33px;
+    width: 316px;
+    font-family: $PlayFairDisplay;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    color: #1B1A17;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.advantages__description {
+    position: absolute;
+    width: 376px;
+    height: 63px;
+    right: -62px;
+    top: 94px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444240;
+}
+
+.advantages__slider-control {
+    font-family: $Prata;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1B1A17D1;
+    position: absolute;
+    top: 480px;
+    left: 760px;
+
+}
+
+
+
+.advantages__button {
+    outline: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.button-right{
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.button-left{
+    left: -25px;
+    top: 0;
+    position: absolute;
+}
+
+
+.news-company {
+    width: 100%;
+    height: 631px;
+
+}
+
+.news-company__text {
+    height: 33px;
+    width: 471px;
+    font-family: $PlayFairDisplay;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 43px;
+    position: relative;
+    top: 279px;
+    left: 275px;
+}
+
+.news-company__description{
+    position: absolute;
+    width: 376px;
+    height: 43px;
+    left: 273px;
+    top: 2273px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #444240;
+}
+
+
+.socials__item {
+    position: relative;
+    top: 500px;
+    left: 150px;
+    display: flex;
+}
+
+.facebook {
+    position: absolute;
+    top: 0;
+    left: 143px;;
+}
+.twitter{
+    position: absolute;
+    top: 5px;
+    left: 184px;
+}
+.instagram{
+    position: absolute;
+    top: 0;
+    left: 91px;
+}
+
+.firstFoto{
+    position: absolute;
+    top: 2170px;
+    right: 485px;
+    width: 242px;
+    height: 228px;
+}
+
+.secondFoto{
+    position: absolute;
+    top: 2408px;
+    right: 485px;
+    width: 242px;
+    height: 228px;
+}
+
+.thirdFoto{
+    right: 98px;
+    position: absolute;
+    top: 2170px;
+    width: 377px;
+    height: 460px;
+}
